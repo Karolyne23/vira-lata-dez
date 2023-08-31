@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap');
 
-*{
+:root {
+    --cor-botao: #C7C7C7;
+    --fonte-titulo: 'Montserrat';
+    --fonte-secundaria: 'Poppins';
+}
+
+* {
+    font-family: var(--fonte-secundaria);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
     position: relative;
     padding-left: 9.5rem;
     padding-top: 17rem;
@@ -14,7 +27,7 @@ header {
 
 /*pseudo-elemento*/
 header::before {
-    content: ' ';
+    content: '';
     background-image: url('../images/image\ 1.png');
     background-size: cover;
     height: 100%;
@@ -31,7 +44,7 @@ h1 {
     text-transform: uppercase;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
     font-size: 4rem;
-    font-family: 'Montserrat';
+    font-family: var(--fonte-titulo);
     font-weight: 700;
 }
 
@@ -39,19 +52,50 @@ span {
     color: #fff;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
     font-size: 1.7rem;
-    font-family: 'Poppins';
-    display: inline-block;
+    font-family: var(--fonte-secundaria);
     margin-top: 30px;
     margin-bottom: 50px;
 
 }
 
 .botao {
-    background-color: #C7C7C7;
+    background-color: var(--cor-botao);
     font-weight: 700;
-    color:#696969;
-    font-family: 'Poppins';
-    padding:.75rem 1.25rem .75rem 1.25rem;
+    color: #696969;
+    font-family: var(--fonte-secundaria);
+    padding: .75rem 1.25rem .75rem 1.25rem;
     border-radius: 8px;
     text-decoration: none;
+    transition: background-color 1s;
 }
+
+.botao:hover {
+   background-color: rgb(228, 228, 151);
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tituloConteudo{
+    color: #000;
+    margin-bottom: 100px;
+}
+
+p{
+    width: 453px;
+    font-size: 22px;
+}
+
