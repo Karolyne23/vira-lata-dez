@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Site de divulgação </title>
     <link rel="stylesheet" href="./assets/css/style.css">
+ 
 </head>
 
 <body>
@@ -25,13 +26,123 @@
         </div>
         <div>
             <h1 class="tituloConteudo">Adote!</h1>
-            <p>
-                Nós enviaremos a você um questionário de adoção para que possamos conhecer melhor a dinâmica da casa e o contexto familiar. Depois de avaliarmos este questionário, poderemos marcar uma visita onde conhecerão os animais que esperam por um lar. <br> <br>
-                
-                Entre em contato conosco através do e-mail ongviralataedez@gmail.com ou através de nossas redes sociais.</p>
+            <p>Nós enviaremos a você um questionário de adoção para que possamos conhecer melhor a dinâmica da casa e o contexto familiar. Depois de avaliarmos este questionário, poderemos marcar uma visita onde conhecerão os animais que esperam por um lar. <br> <br>
+            </p>
+            Entre em contato conosco através do e-mail ongviralataedez@gmail.com ou através de nossas redes sociais 
         </div>
     </section>
 
+    <section class="projeto">
+        <ul>
+            <li>
+                <div class="card-content">
+                    <h2>Titulo do projeto</h2>
+                    <h3>Subtitulo do projeto</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempore explicabo quia
+                        repellendus iusto laborum. Dignissimos tempora harum mollitia officiis repellendus</p>
+
+                    <a href="" class="botao">Detalhes</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-content">
+                    <h2>Titulo do projeto</h2>
+                    <h3>Subtitulo do projeto</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempore explicabo quia
+                        repellendus iusto laborum. Dignissimos tempora harum mollitia officiis repellendus</p>
+
+                    <a href="" class="botao">Detalhes</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-content">
+                    <h2>Titulo do projeto</h2>
+                    <h3>Subtitulo do projeto</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempore explicabo quia
+                        repellendus iusto laborum. Dignissimos tempora harum mollitia officiis repellendus</p>
+
+                    <a href="" class="botao">Detalhes</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contatoTitle">
+            <h1>Entre em contato para adoção</h1>
+        </div>
+
+        <div class="form">
+            <div class="header">
+                <h5>Vira Lata é Dez</h5>
+                <h5>Vira Lata é Dez</h5>
+            </div>
+
+            <div class="row">
+                <label >Nome</label>
+                <input type="text" placeholder="Digite seu Nome" id="InputNome">
+                <span class="erro hidden" id="spanErroNome">Nome Invalido</span>
+            </div>
+            <div class="row">
+                <label for="">E-maiil</label>
+                <input type="text" placeholder="Digite seu E-maiil" id="InputEmail">
+                <span class="erro hidden" id="spanErroEmail">Email Invalido</span>
+            </div>
+
+            <div class="row">
+                <label for="">QTD de animais: </label>
+                <input type="number" name="" id="InputQtdAnimais">
+                <span class="erro hidden" id="spanErroQtdAnimais">Quantidade de animais invalida</span>
+            </div>
+            <div class="row rowCheck">
+                <div>
+                    <input type="checkbox" name="" id="InputCastracao">
+                    <label for="">Castração: </label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="InputCheckup">
+                    <label for="">Checkup veterinario: </label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="InputBanhoTosa">
+                    <label for="">Banho e tosa: </label>
+                </div>
+            </div>
+            <div>
+                <button id="button">Enviar</button>
+            </div>
+
+            <div class="valorTotal">
+                <span>O valor total deu: R$ </span>
+                <span id="valorTotal"></span>
+            </div>
+        </div>
+    </section>
+
+    <div class="containerModal" id="containerModal">
+        <div class="modal">
+            <div class="headerModal">
+                <span>Vira Lata dez</span>
+                <span id="modalClose"class="close">X</span>
+            </div>
+
+            <div class="bodyModal">
+                <h1>Muito obrigado por entrar em contato conosco, assim que seus dados forem aprovados daremos um retorno sobre sua adoção</h1>
+                <div>
+                    <span id="spanNome">Seu nome:</span>
+                    <span id="spanIdade">Seu idade:</span>
+                    <span id="spanEndereco">Seu endereço:</span>
+                    <span id="spanQtdAnimais">Seu animais:</span>
+                </div>
+         
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -7,10 +7,15 @@
 }
 
 * {
-    font-family: var(--fonte-secundaria);
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+    font-family: var(--fonte-secundaria);
+}
+
+body {
+    overflow-x: hidden;
 }
 
 header {
@@ -70,7 +75,7 @@ span {
 }
 
 .botao:hover {
-   background-color: rgb(228, 228, 151);
+    background-color: rgb(228, 228, 151);
 }
 
 
@@ -83,19 +88,219 @@ span {
 }
 
 
-.images{
+.images {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.tituloConteudo{
+.tituloConteudo {
     color: #000;
     margin-bottom: 100px;
 }
 
-p{
+p {
     width: 453px;
     font-size: 22px;
 }
 
+.projeto {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.projeto ul {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: auto;
+    list-style: none;
+    gap: 20px;
+}
+
+.projeto ul li {
+    width: 251px;
+    padding: 15px;
+
+    display: flex;
+    background-color: #d9d9d9;
+    flex-direction: column;
+
+    border-radius: 10px;
+
+    background-image: url(../images/taylor-kopel-WX4i1Jq_o0Y-unsplash.jpg);
+    background-size: cover;
+    min-height: 376px;
+}
+
+.projeto ul li:hover .card-content {
+    display: block;
+}
+
+.projeto ul li h2 {
+    color: #FFF;
+}
+
+.projeto ul li p {
+    color: #FFF;
+    font-size: 18px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+.card-content {
+    display: none;
+}
+
+.contato {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.contatoTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.contato h1 {
+    font-size: 32px;
+    color: #000;
+}
+
+.form {
+    margin: auto;
+    width: 600px;
+    padding: 20px 20px 40px 20px;
+    background-color: #696969;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.form .header {
+    width: 100%;
+    height: 50px !important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #C7C7C7;
+}
+
+.form .row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.form div label {
+    color: #FFF;
+}
+
+.form div button {
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.form div button:hover {
+    background-color: rgb(194, 189, 189);
+    cursor: pointer;
+}
+
+.containerModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width: 80%;
+    height: 80%;
+    background-color: #FFF;
+    border-radius: 12px;
+}
+.modal span,
+.modal h1{
+    font-size: 18px;
+    margin: 0;
+}
+.modal h1{
+    margin-bottom: 20px;
+    width: 500px;
+}
+.close:hover{
+    color: #000;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.headerModal{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bodyModal{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.90);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.bodyModal div{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+
+.valorTotal{
+    display: flex;
+}
+
+.erro{
+    margin: 0;
+    font-size: 12px;
+    color: #F00;
+}
